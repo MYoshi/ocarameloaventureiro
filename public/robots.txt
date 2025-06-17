@@ -1,0 +1,28 @@
+# robots.txt for ocarameloaventureiro.com
+User-agent: *
+Allow: /
+
+# Block sensitive or unnecessary directories
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /server/
+
+# Allow crawling of static assets
+Allow: /_next/static/
+Allow: /images/
+Allow: /videos/
+
+# Sitemap location
+Sitemap: https://ocarameloaventureiro.com/sitemap.xml
+
+# Crawl-delay for all bots (optional, uncomment if needed)
+# Crawl-delay: 10
+
+# Block specific bad bots (optional, add more as needed)
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /

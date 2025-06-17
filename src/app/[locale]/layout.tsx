@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { hasLocale, type Locale, NextIntlClientProvider } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { routing } from '@/i18n/routing';
@@ -11,6 +11,16 @@ type Props = {
   children: ReactNode;
   params: Promise<{ locale: Locale }>;
 };
+
+export async function generateMetadata(props: Omit<Props, 'children'>) {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: 'LocaleLayout' });
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+  };
+}
 
 export default async function LocaleLayout({ children, params }: Props) {
   // Ensure that the incoming `locale` is valid
@@ -38,8 +48,6 @@ export default async function LocaleLayout({ children, params }: Props) {
             gtag('config', 'G-0C23QGEBV4');
           `}
         </Script>
-        <title>O Caramelo Aventureiro</title>
-        <meta name="description" content="O caramelo aventureiro, o melhor caramelo do mundo!" />
         <link rel="canonical" href="https://ocarameloaventureiro.com/" />
         {/* Open Graph tags */}
         <meta property="og:title" content="O Caramelo Aventureiro" />
