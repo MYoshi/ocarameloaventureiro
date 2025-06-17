@@ -1,15 +1,13 @@
-'use client';
-
 import type { RefObject } from 'react';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { useScrollWidthAnimation } from '@/hooks/useScrollWidthAnimation';
 import { getShuffledImageNumbers } from '@/utils/photoFrame';
-import { useScrollWidthAnimation } from '@/utils/useScrollWidthAnimation';
 import PhotoFrameGrid from './PhotoFrameGrid';
 import PhotoFrameMobileList from './PhotoFrameMobileList';
 
 const MOBILE_IMAGE_COUNT = 8;
-const DESKTOP_IMAGE_COUNT = 9;
+const DESKTOP_IMAGE_COUNT = 10;
 const TOTAL_IMAGES = 18;
 
 type PhotoFrameProps = {
@@ -27,17 +25,17 @@ const PhotoFrameMain = ({ photoFrameRef }: PhotoFrameProps) => {
   return (
     <div ref={photoFrameRef}>
       {/* Desktop */}
-      <section className="hidden sm:flex w-full">
+      <section className="hidden md:flex w-full">
         <motion.div
           style={{ width: widthPercent }}
           transition={{ duration: 2, ease: 'easeOut' }}
           className="max-w-[1920px] mx-auto z-10"
         >
-          <PhotoFrameGrid imageNumbers={imageNumbers} />
+          {imageNumbers.length ? <PhotoFrameGrid imageNumbers={imageNumbers} /> : null}
         </motion.div>
       </section>
       {/* Mobile */}
-      <section className="flex sm:hidden w-full">
+      <section className="flex md:hidden w-full">
         <motion.div
           style={{ width: widthPercent }}
           transition={{ duration: 2, ease: 'easeOut' }}

@@ -1,0 +1,43 @@
+{
+  "Main": {
+    "topTitle": "O Caramelo\nAventureiro",
+    "bottomText": "Conheça a minha história!"
+  },
+  "Footer": {
+    "copyright": "© 2025 O Caramelo Aventureiro. Todos os direitos reservados."
+  },
+  "About": {
+    "heading": "Siga as patinhas do Caramelo 🐾",
+    "journey": "A jornada continua! Acompanhe o Caramelo em novas aventuras pelo Japão e pelo mundo. Fotos, vídeos, dicas e muita fofura direto do focinho mais curioso da internet.",
+    "contact": "📬 Quer mandar um alô ou compartilhar sua própria aventura canina? Fale com a gente!",
+    "instagram": "@ocarameloaventureiro",
+    "email": "contato@ocarameloaventureiro.com"
+  },
+  "Photo": {
+    "alt": "O Caramelo Aventureiro - Foto {number}"
+  },
+  "Gallery": {
+    "ariaLabel": "Galeria de fotos de O Caramelo Aventureiro"
+  },
+  "CarameloGallery": {
+    "1": "Oiii pessoal,\nesse é um\nregistro de quando\neu ainda era\num filhote, com\num dos meus\nprimeiros brinquedos:\numa bolinha !",
+    "2": "Aqui sou eu\nexibindo todo o\nmeu charme com\no meu colete\nde barbatana de\ntubarão nas praias\ndo Japão. Um\nverdadeiro ícone !",
+    "3": "Eu com meu\ncasaco vermelho por\naí, desfilando o\nmeu charme",
+    "4": "Esse dia estava\ntão quente que\neu nem conseguia\nabrir os olhos,\nmas eu nunca\ndeixo o passeio\nde lado se\nme chamam pra\nsair eu estou\nsempre pronto.",
+    "5": "Os dias de\nprimavera no Japão\nsão os melhores\npra passear. O\nclima é agradável\ne sempre é\npossível contrar\nflorzinhas lindinhas\npelo caminho.",
+    "6": "Mostrando um pouco\ndas belezas dos\nparques do Japão.\nE claro, eu\nnão posso faltar\nnesse registro",
+    "7": "Cheirando as\nflorzinhas pelo\ncaminho",
+    "8": "Fazendo o que\neu mais amo\ndepois de comer:\npasseando !",
+    "9": "Pensando aqui…..\nserá que eu\nposso fazer xixi\naqui ?",
+    "10": "A temporada mais\nlinda do ano\nchegou ! Ver\nas sakuras desabrochando\né um momento\nmuito especial e\neu não poderia\nficar de fora",
+    "11": "Tenho até\nchapeuzinho…. Olha\nque charme !",
+    "12": "Preparado para\nfesta",
+    "13": "Tentando caprichar\nna carinha de\npena pra ver\nse desistem de\nme dar banho.\nAviso : não\nfuncionou 🥲",
+    "14": "O leão mais\nfofo que você\njá viu 🥰",
+    "15": "Look pronto: hora\nde passeio na\nneve ⛄️",
+    "16": "Um dia lindo\nde verão no\nparque",
+    "17": "Cuidado: tubarão\nandando",
+    "18": "Um Caramelo jovem\ne feliz\nna sua primeira\nfoto em solo\njaponês"
+  }
+
+}

@@ -66,3 +66,11 @@ body {
     0 12px 24px rgba(0, 0, 0, 0.6),
     0 8px 8px rgba(0, 0, 0, 0.4);
 }
+
+.shadow-custom-3xl {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.bg-brand-color-50 {
+  background-color: rgb(113, 130, 100, 0.5); /* or use rgba/hsla as needed */
+}

@@ -1,9 +1,11 @@
 'use client';
+import { useTranslations } from 'next-intl';
 import { useRef } from 'react';
 import Entrance from '../Entrance';
 import { PhotoFrameMain } from '../PhotoFrame';
 
 export default function MainSection() {
+  const t = useTranslations('');
   const targetRef = useRef<HTMLDivElement>(null);
   return (
     <>
@@ -11,14 +13,8 @@ export default function MainSection() {
         targetRef={targetRef}
         videoSrc="/videos/ocarameloaventureiro.mp4"
         videoType="video/mp4"
-        topTitle={(
-          <>
-            O Caramelo
-            <br />
-            Aventureiro
-          </>
-        )}
-        bottomText="Conheça a minha história!"
+        topTitle={t('Main.topTitle')}
+        bottomText={t('Main.bottomText')}
       />
       <PhotoFrameMain photoFrameRef={targetRef} />
     </>

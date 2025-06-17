@@ -60,7 +60,7 @@ const Entrance = ({ targetRef, videoSrc, videoType, topTitle, bottomText }: Entr
         }
         animate={{ opacity: 1, top: '50px' }}
         transition={{ duration: 2, ease: 'easeOut', delay: 5 }}
-        className="flex absolute w-full z-10 justify-center items-start text-orange-50 font-extrabold text-outline text-4xl md:text-6xl lg:text-8xl"
+        className="flex absolute w-full z-10 justify-center items-start text-orange-50 font-extrabold text-outline text-4xl md:text-6xl lg:text-8xl text-center"
       >
         {topTitle}
       </motion.div>

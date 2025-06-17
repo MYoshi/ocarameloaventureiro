@@ -1,0 +1,42 @@
+{
+  "Main": {
+    "topTitle": "The Adventurous Caramelo",
+    "bottomText": "Discover my story!"
+  },
+  "Footer": {
+    "copyright": "© 2025 The Adventurous Caramelo. All rights reserved."
+  },
+  "About": {
+    "heading": "Follow Caramelo's pawprints 🐾",
+    "journey": "The journey continues! Follow Caramelo on new adventures in Japan and around the world. Photos, videos, tips, and lots of cuteness straight from the most curious snout on the internet.",
+    "contact": "📬 Want to say hi or share your own dog adventure? Contact us!",
+    "instagram": "@theadventurouscaramelo",
+    "email": "contact@theadventurouscaramelo.com"
+  },
+  "Photo": {
+    "alt": "The Adventurous Caramelo - Photo {number}"
+  },
+  "Gallery": {
+    "ariaLabel": "Photo gallery of The Adventurous Caramelo"
+  },
+  "CarameloGallery": {
+    "1": "Hi everyone,\nthis is a\nphoto from\nwhen I was\nstill a puppy,\nwith one of\nmy first toys:\na little ball!",
+    "2": "Here I am\nshowing off\nall my charm\nwith my shark\nfin vest on\nthe beaches of\nJapan. A true\nicon!",
+    "3": "Me with my\nred coat out\nand about,\nshowing off my\ncharm.",
+    "4": "That day was\nso hot I\ncouldn't even\nopen my eyes,\nbut I never\nskip a walk—if\nsomeone calls me\nout, I'm always\nready.",
+    "5": "Spring days in\nJapan are the\nbest for walks.\nThe weather is\npleasant and you\ncan always find\ncute little flowers\nalong the way.",
+    "6": "Showing a bit\nof the beauty\nof Japan's parks.\nAnd of course,\nI can't miss\nbeing in the\npicture!",
+    "7": "Smelling the\nflowers along\nthe way.",
+    "8": "Doing what I\nlove most after\neating: going for\nwalks!",
+    "9": "Thinking here...\ncan I pee\nhere?",
+    "10": "The most beautiful\nseason of the\nyear has arrived!\nSeeing the sakuras\nbloom is a\nvery special moment\nand I couldn't\nmiss it.",
+    "11": "I even have\na little hat...\nLook how charming!",
+    "12": "Ready for the\nparty.",
+    "13": "Trying my best\nsad face to\nsee if they\ngive up on\nbathing me. Spoiler:\nit didn't work 🥲",
+    "14": "The cutest lion\nyou've ever seen 🥰",
+    "15": "Outfit ready: time\nfor a walk\nin the snow ⛄️",
+    "16": "A beautiful summer\nday in the\npark.",
+    "17": "Careful: shark\nwalking.",
+    "18": "A young and\nhappy Caramelo in\nhis first photo\non Japanese soil."
+  }
+}
