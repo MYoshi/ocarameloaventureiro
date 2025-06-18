@@ -6,7 +6,7 @@ type BottomButtonProps = {
   alt: string;
   label: string;
   external?: boolean;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent) => void;
 };
 
 export default function BottomButton({
