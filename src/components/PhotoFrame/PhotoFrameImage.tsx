@@ -34,7 +34,7 @@ export default function PhotoFrameImage({ imageNumber, position }: PhotoFrameIma
       transition={{ duration: 2, ease: 'easeOut' }}
       className="p-2"
     >
-      <div className="flex w-full rounded-lg relative m-h-[540px] justify-center items-center h-full cursor-pointer shadow-custom-3xl overflow-hidden">
+      <div className="flex w-full rounded-lg relative min-h-[320px] justify-center items-center h-full cursor-pointer shadow-custom-3xl overflow-hidden">
         <Image
           src={imageSrc}
           alt={imageAlt}
@@ -59,7 +59,7 @@ export default function PhotoFrameImage({ imageNumber, position }: PhotoFrameIma
         >
           {showText
             ? (
-                <div className="absolute inset-0 flex items-center justify-center p-8">
+                <div className="absolute inset-0 flex items-center justify-center p-4 lg:p-8">
                   <div
                     className="sm:max-w-full w-screen"// ensure wrapping
                   >
