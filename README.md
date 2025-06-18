@@ -91,4 +91,4 @@ MIT
 
 ---
 
-> **Made with Next.js, Tailwind CSS, and ❤️ by [Your Name]**
+> **Made with Next.js, Tailwind CSS, and ❤️ by Myoshi**
