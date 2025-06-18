@@ -7,8 +7,8 @@ type EntranceProps = {
   targetRef: RefObject<HTMLDivElement | null>;
   videoSrc?: string;
   videoType?: string;
-  topTitle?: any; // This can be a string or a React node
-  bottomText?: any;
+  topTitle?: React.ReactNode; // Improved type
+  bottomText?: React.ReactNode; // Improved type
 };
 
 const Entrance = ({ targetRef, videoSrc, videoType, topTitle, bottomText }: EntranceProps) => {
@@ -16,7 +16,6 @@ const Entrance = ({ targetRef, videoSrc, videoType, topTitle, bottomText }: Entr
 
   const myAnimation = useCallback(async () => {
     await animate(scope.current, { top: 'calc(50% - 100px)' }, { duration: 3, ease: 'easeOut' });
-
     await animate(scope.current, {
       width: '100vw',
       height: '100vh',
@@ -29,9 +28,9 @@ const Entrance = ({ targetRef, videoSrc, videoType, topTitle, bottomText }: Entr
     myAnimation();
   }, [myAnimation]);
 
-  const handleClick = () => {
-    // Handle button click logic here
-    targetRef.current?.scrollIntoView({ behavior: 'smooth' });
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    targetRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   };
 
   return (
@@ -46,18 +45,22 @@ const Entrance = ({ targetRef, videoSrc, videoType, topTitle, bottomText }: Entr
             borderRadius: 9999,
           }}
           transition={{ duration: 2, ease: 'easeOut', delay: 2 }}
-
           className="relative max-w-none mx-auto overflow-hidden"
         >
-          <video className="w-full h-full object-center object-cover" autoPlay loop muted playsInline>
+          <video
+            className="w-full h-full object-center object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-hidden="true" // Decorative background video
+          >
             <source src={videoSrc} type={videoType} />
           </video>
         </motion.div>
       </div>
       <motion.div
-        initial={
-          { opacity: 0, top: '-200px' }
-        }
+        initial={{ opacity: 0, top: '-200px' }}
         animate={{ opacity: 1, top: '50px' }}
         transition={{ duration: 2, ease: 'easeOut', delay: 5 }}
         className="flex absolute w-full z-10 justify-center items-start text-orange-50 font-extrabold text-outline text-4xl md:text-6xl lg:text-8xl text-center"
@@ -65,12 +68,10 @@ const Entrance = ({ targetRef, videoSrc, videoType, topTitle, bottomText }: Entr
         {topTitle}
       </motion.div>
       <motion.div
-        initial={
-          { opacity: 0 }
-        }
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, ease: 'easeOut', delay: 5 }}
-        className="flex absolute w-full z-10 justify-center text-orange-50 text-2xl md:text-5xl lg:text-7xl bottom-7 sm:bottom-28 items-center flex-col gap-3"
+        className="flex absolute w-full z-10 justify-center text-orange-50 text-2xl md:text-5xl lg:text-7xl bottom-28 items-center flex-col gap-3"
       >
         {bottomText}
         <div className="order-1">
@@ -78,7 +79,7 @@ const Entrance = ({ targetRef, videoSrc, videoType, topTitle, bottomText }: Entr
             href="#"
             iconSrc="/images/icons/dog-paws.svg"
             alt="Paw Button"
-            label=""
+            label="" // Accessible label
             external={false}
             onClick={handleClick}
           />

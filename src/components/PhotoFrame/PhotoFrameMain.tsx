@@ -23,9 +23,9 @@ const PhotoFrameMain = ({ photoFrameRef }: PhotoFrameProps) => {
   }, []);
 
   return (
-    <div ref={photoFrameRef}>
+    <div className="w-screen relative" ref={photoFrameRef}>
       {/* Desktop */}
-      <section className="hidden md:flex w-full">
+      <section className="hidden md:flex w-full max-w-[1920px] mx-auto">
         <motion.div
           style={{ width: widthPercent }}
           transition={{ duration: 2, ease: 'easeOut' }}
